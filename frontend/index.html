@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+
+    <!--CSS sendiri-->
+    <link rel="stylesheet" type="text/css" media="screen" href="utama.css" />
+    <link rel="icon" type="image/png" href="icon.png">
+    
+
+    <title>Twatter | Home</title>
+</head>
+
+<body class="bg-light">
+    <header class="bg-white">
+        <!--navigasi-->
+        <nav class="navigasi container">
+            <ul>
+                <li class='top-nav'><a href="index.html"> Home</li></a>
+                <li class='top-nav'><a href="Notification.html"> Notifications</li></a>
+                <li class='top-nav text-primary'> Message</li>
+            </ul>
+            <a href="index.html">
+                <h3><img src="icon.png" class="icontwitter" /></h3>
+            </a>
+            <ul>
+                </a>
+                <a href='profile.html'>
+                    <li class='top-nav'>Profile</li>
+                </a>
+                <a href='setting.html'>
+                <li class='top-nav'>Setting</li>
+                </a>
+                <a href='login.html'>
+                    <li class='top-nav' onclick="haspusCookie()">Sign Out</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+
+    <!--section-->
+    <div class="container">
+        <div class="row">
+            <div class="col-3">
+                <!--profile-->
+                <div class="row">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="cover.jpg" alt="Card image cap">
+                        <div class="card-body" id="aselole">
+                            <!-- <img src="image5.jpg" class="imageprofile" />
+                            <div class="card-text">
+                                <p>Syifa<br>
+                                    @syifamaliah
+                                </p>
+                            </div> -->
+                        </div>
+                        <div class="row card-body" style="margin-top: -40px;" id="countingprofile">
+                            
+                        </div>
+                    </div>
+                </div>
+                <!--Trending-->
+                <div class="row bg-white rounded mt-3">
+                    <div class="trending">
+                        <h4>Trends for you</h4>
+                        <p>#tumblr</p>
+                        <p>#front</p>
+                        <p>#babyG</p>
+                        <p>#LionAir</p>
+                        <p>#CPNS2019</p>
+                    </div>
+                </div>
+            </div>
+            <!--Twetbox-->
+            <div class="col-6 no-gutters">
+                <div class="row ml-1 tweetsection rounded bg-white">
+                    <form onsubmit="event.preventDefault(); addTweet()">
+                        <input textarea class="form-control" id="tweet-box" rows="3" placeholder=" What's Happening?"></textarea>
+                        <button type="submit" class="btn btn-primary mt-1" id='submit-tweet'>Tweet!</button>
+                    </form>
+                </div>
+                <div class="row">
+                    <!--feed-->
+                    <div id="feed">
+
+                        <div class='tweet'>
+                            <img src="image5.jpg" class="imagefeed" />
+                            <h4>Syifa</h4>
+                            <p>Hmmmmm</p>
+                            <span>11:42 - 23 November 2018</span>
+                        </div>
+                        <div class='tweet'>
+                            <img src="image5.jpg" class="imagefeed" />
+                            <h4>Syifa</h4>
+                            <p>Hmmmmm</p>
+                            <span>11:42 - 23 November 2018</span>
+                        </div>
+                        <div class='tweet'>
+                            <img src="image5.jpg" class="imagefeed" />
+                            <h4>Syifa</h4>
+                            <p>Hmmmmm</p>
+                            <span>11:42 - 23 November 2018</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <!--Who to follow-->
+                <div class="row bg-white rounded ml-1">
+                    <h5 class="whotofollow">Who to Follow</h5>
+                </div>
+                <div id="boxwhotofollow">
+
+                </div>
+                <div>
+                    <div id="copyright">
+                        <p id='copyright-text'>&copy; Copyright 2019</p>
+                        <ul>
+                            <li class='bottom-nav'>About Us</li>
+                            <li class='bottom-nav'>Support</li>
+                            <li class='bottom-nav'>Terms & Conditions</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+<script>
+    allTweet()
+    getProfile()
+    suggestion()
+    counting()
+    // addToLocalStorage()
+</script>
+
+</html>

@@ -1,0 +1,38 @@
+.syifa{
+    background-image: url(backgroundtwitter.jpg);
+    height: 670px;
+    padding: 0;
+}
+
+.login{
+    padding-left: 100px;
+    margin-top: 20px;
+    margin-bottom: 150px;
+}
+
+.jointwitter{
+    margin-bottom: 30px;
+    margin-top: 40px;
+    padding-left: 50px;
+}
+
+.formsignup{
+    padding-left: 50px;
+}
+
+.logintwitter{
+    margin-top: 250px;
+    text-align: center;
+}
+
+.form-control{
+    margin-bottom: 15px;
+}
+
+.loginbutton{
+    margin-left: 160px;
+}
+
+.signupbutton{
+    margin-left: 160px;
+}

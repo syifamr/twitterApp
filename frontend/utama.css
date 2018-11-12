@@ -1,0 +1,184 @@
+/* HEADER */
+.icontwitter {
+    width: 20px;
+}
+
+.navigasi {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.top-nav {
+    display: inline-block;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+.navbarkiri{
+    padding-left: 10px;
+}
+
+.imageprofile {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-top: -70px;
+    border: 3px solid white;
+}
+
+/* SECTION */
+
+.card-text {
+    margin-left: 100px;
+    margin-top: -40px;
+}
+
+.trendingTalks {
+    display: inline-block;
+}
+
+.trending {
+    margin-left: 20px;
+}
+
+.tweetsection {
+    background-color: white;
+    padding: 10px;
+}
+
+#tweet-box {
+    width: 530px;
+}
+
+#submit-tweet {
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-left: 460px;
+}
+
+.imagefeed {
+    width: 80px;
+    border-radius: 50%;
+}
+
+#feed {
+    margin-left: 19px;
+    width: 560px;
+    margin-top: 2px;
+}
+
+.tweet {
+    margin-top: 2px;
+    background-color: white;
+    display: grid;
+    grid-template-areas:
+        'a a . b b b b b f . .'
+        'a a . c c c c c c c c'
+        '. . . . e e d d d d d';
+    grid-template-columns: repeat(10, 1fr);
+}
+
+.tweet img {
+    grid-area: a;
+    margin-left: 20px;
+    margin-top: 15px;
+    width:80px;
+    height:80px;
+    border-radius: 50%;
+}
+
+.tweet h4 {
+    grid-area: b;
+    margin-top: 15px;
+}
+
+.tweet p {
+    grid-area: c;
+    text-align: left;
+    margin-top: 0px;
+}
+
+.tweet span {
+    grid-area: d;
+}
+
+.whotofollow {
+    margin-left: 20px;
+}
+
+.people {
+    margin-top: 2px;
+    margin-top: 10px;
+    background-color: white;
+    padding-bottom: 10px;
+    display: grid;
+    grid-template-areas:
+        'a a . b b b b b b b b'
+        'a a . c c c c . . . .';
+    grid-template-columns: repeat(10, 1fr);
+}
+
+.people img {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    grid-area: a;
+}
+
+.people p{
+    grid-area: b;
+}
+
+.people .followbutton{
+    grid-area: c;
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: 40px;
+    margin-top: -15px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    font-size: 13px;
+}
+
+#copyright{
+    font-size: 10px;
+    text-align: center;
+    padding-top: 12px;
+}
+
+.bottom-nav{
+    display: inline-block;
+    text-align: center;
+    margin-right: 14px;
+}
+
+.tweet .deletebtn{
+    grid-area: f;
+    border: 1px solid;
+    border-radius: 10%;
+    margin-top: 20px;
+}
+
+
+/* setting */
+
+.formsetting{
+    margin-left: 20px;
+}
+.editprofilefont{
+    margin-top: 7px;
+}
+
+.jumbotron{
+    margin-bottom: 0px;
+}
+
+.tittlefont{
+    margin-left: 20px;
+}
+
+.jumbotron{
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
